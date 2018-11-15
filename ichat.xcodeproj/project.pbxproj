@@ -14,6 +14,8 @@
 		18119B50219403580073FF5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18119B4E219403580073FF5D /* LaunchScreen.storyboard */; };
 		18119B5B219403580073FF5D /* ichatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18119B5A219403580073FF5D /* ichatTests.swift */; };
 		18119B66219403580073FF5D /* ichatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18119B65219403580073FF5D /* ichatUITests.swift */; };
+		19B93DFB219DBE2B00668458 /* ICHTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B93DFA219DBE2B00668458 /* ICHTabBarController.swift */; };
+		19B93DFD219DBE4A00668458 /* ICHNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B93DFC219DBE4A00668458 /* ICHNavigationController.swift */; };
 		E5667EA4ED71297B09DACA80 /* Pods_ichat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4E2FECDA5D121E1CC47A8DA /* Pods_ichat.framework */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +51,8 @@
 		18119B61219403580073FF5D /* ichatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ichatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18119B65219403580073FF5D /* ichatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ichatUITests.swift; sourceTree = "<group>"; };
 		18119B67219403580073FF5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19B93DFA219DBE2B00668458 /* ICHTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICHTabBarController.swift; sourceTree = "<group>"; };
+		19B93DFC219DBE4A00668458 /* ICHNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICHNavigationController.swift; sourceTree = "<group>"; };
 		E6831065BEE00EAA33A6AF9B /* Pods-ichat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ichat.release.xcconfig"; path = "Pods/Target Support Files/Pods-ichat/Pods-ichat.release.xcconfig"; sourceTree = "<group>"; };
 		F4E2FECDA5D121E1CC47A8DA /* Pods_ichat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ichat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -110,6 +114,8 @@
 				18119B4C219403580073FF5D /* Assets.xcassets */,
 				18119B4E219403580073FF5D /* LaunchScreen.storyboard */,
 				18119B51219403580073FF5D /* Info.plist */,
+				19B93DFA219DBE2B00668458 /* ICHTabBarController.swift */,
+				19B93DFC219DBE4A00668458 /* ICHNavigationController.swift */,
 			);
 			path = ichat;
 			sourceTree = "<group>";
@@ -213,6 +219,7 @@
 		18119B3A219403550073FF5D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = ICH;
 				LastSwiftUpdateCheck = 1000;
 				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = iChat;
@@ -331,8 +338,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19B93DFD219DBE4A00668458 /* ICHNavigationController.swift in Sources */,
 				18119B48219403550073FF5D /* ViewController.swift in Sources */,
 				18119B46219403550073FF5D /* AppDelegate.swift in Sources */,
+				19B93DFB219DBE2B00668458 /* ICHTabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
