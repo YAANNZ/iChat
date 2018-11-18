@@ -16,6 +16,15 @@
 		18119B66219403580073FF5D /* ichatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18119B65219403580073FF5D /* ichatUITests.swift */; };
 		19B93DFB219DBE2B00668458 /* ICHTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B93DFA219DBE2B00668458 /* ICHTabBarController.swift */; };
 		19B93DFD219DBE4A00668458 /* ICHNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B93DFC219DBE4A00668458 /* ICHNavigationController.swift */; };
+		19B93E1821A1BE3B00668458 /* ICHMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B93E1621A1BE3B00668458 /* ICHMessageViewController.swift */; };
+		19B93E1921A1BE3B00668458 /* ICHMessageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19B93E1721A1BE3B00668458 /* ICHMessageViewController.xib */; };
+		19B93E1C21A1BE6600668458 /* ICHFriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B93E1A21A1BE6600668458 /* ICHFriendsViewController.swift */; };
+		19B93E1D21A1BE6600668458 /* ICHFriendsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19B93E1B21A1BE6600668458 /* ICHFriendsViewController.xib */; };
+		19B93E2021A1BE7D00668458 /* ICHDiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B93E1E21A1BE7D00668458 /* ICHDiscoverViewController.swift */; };
+		19B93E2121A1BE7D00668458 /* ICHDiscoverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19B93E1F21A1BE7D00668458 /* ICHDiscoverViewController.xib */; };
+		19B93E2421A1BE9000668458 /* ICHProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B93E2221A1BE9000668458 /* ICHProfileViewController.swift */; };
+		19B93E2521A1BE9000668458 /* ICHProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19B93E2321A1BE9000668458 /* ICHProfileViewController.xib */; };
+		19B93E2721A1BEFF00668458 /* ICHConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B93E2621A1BEFF00668458 /* ICHConst.swift */; };
 		E5667EA4ED71297B09DACA80 /* Pods_ichat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4E2FECDA5D121E1CC47A8DA /* Pods_ichat.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +62,15 @@
 		18119B67219403580073FF5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		19B93DFA219DBE2B00668458 /* ICHTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICHTabBarController.swift; sourceTree = "<group>"; };
 		19B93DFC219DBE4A00668458 /* ICHNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICHNavigationController.swift; sourceTree = "<group>"; };
+		19B93E1621A1BE3B00668458 /* ICHMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICHMessageViewController.swift; sourceTree = "<group>"; };
+		19B93E1721A1BE3B00668458 /* ICHMessageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ICHMessageViewController.xib; sourceTree = "<group>"; };
+		19B93E1A21A1BE6600668458 /* ICHFriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICHFriendsViewController.swift; sourceTree = "<group>"; };
+		19B93E1B21A1BE6600668458 /* ICHFriendsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ICHFriendsViewController.xib; sourceTree = "<group>"; };
+		19B93E1E21A1BE7D00668458 /* ICHDiscoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICHDiscoverViewController.swift; sourceTree = "<group>"; };
+		19B93E1F21A1BE7D00668458 /* ICHDiscoverViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ICHDiscoverViewController.xib; sourceTree = "<group>"; };
+		19B93E2221A1BE9000668458 /* ICHProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICHProfileViewController.swift; sourceTree = "<group>"; };
+		19B93E2321A1BE9000668458 /* ICHProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ICHProfileViewController.xib; sourceTree = "<group>"; };
+		19B93E2621A1BEFF00668458 /* ICHConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICHConst.swift; sourceTree = "<group>"; };
 		E6831065BEE00EAA33A6AF9B /* Pods-ichat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ichat.release.xcconfig"; path = "Pods/Target Support Files/Pods-ichat/Pods-ichat.release.xcconfig"; sourceTree = "<group>"; };
 		F4E2FECDA5D121E1CC47A8DA /* Pods_ichat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ichat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -116,6 +134,15 @@
 				18119B51219403580073FF5D /* Info.plist */,
 				19B93DFA219DBE2B00668458 /* ICHTabBarController.swift */,
 				19B93DFC219DBE4A00668458 /* ICHNavigationController.swift */,
+				19B93E1621A1BE3B00668458 /* ICHMessageViewController.swift */,
+				19B93E1721A1BE3B00668458 /* ICHMessageViewController.xib */,
+				19B93E1A21A1BE6600668458 /* ICHFriendsViewController.swift */,
+				19B93E1B21A1BE6600668458 /* ICHFriendsViewController.xib */,
+				19B93E1E21A1BE7D00668458 /* ICHDiscoverViewController.swift */,
+				19B93E1F21A1BE7D00668458 /* ICHDiscoverViewController.xib */,
+				19B93E2221A1BE9000668458 /* ICHProfileViewController.swift */,
+				19B93E2321A1BE9000668458 /* ICHProfileViewController.xib */,
+				19B93E2621A1BEFF00668458 /* ICHConst.swift */,
 			);
 			path = ichat;
 			sourceTree = "<group>";
@@ -263,6 +290,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				18119B50219403580073FF5D /* LaunchScreen.storyboard in Resources */,
+				19B93E2521A1BE9000668458 /* ICHProfileViewController.xib in Resources */,
+				19B93E1921A1BE3B00668458 /* ICHMessageViewController.xib in Resources */,
+				19B93E2121A1BE7D00668458 /* ICHDiscoverViewController.xib in Resources */,
+				19B93E1D21A1BE6600668458 /* ICHFriendsViewController.xib in Resources */,
 				18119B4D219403580073FF5D /* Assets.xcassets in Resources */,
 				18119B4B219403550073FF5D /* Main.storyboard in Resources */,
 			);
@@ -341,6 +372,11 @@
 				19B93DFD219DBE4A00668458 /* ICHNavigationController.swift in Sources */,
 				18119B48219403550073FF5D /* ViewController.swift in Sources */,
 				18119B46219403550073FF5D /* AppDelegate.swift in Sources */,
+				19B93E1C21A1BE6600668458 /* ICHFriendsViewController.swift in Sources */,
+				19B93E2721A1BEFF00668458 /* ICHConst.swift in Sources */,
+				19B93E2021A1BE7D00668458 /* ICHDiscoverViewController.swift in Sources */,
+				19B93E2421A1BE9000668458 /* ICHProfileViewController.swift in Sources */,
+				19B93E1821A1BE3B00668458 /* ICHMessageViewController.swift in Sources */,
 				19B93DFB219DBE2B00668458 /* ICHTabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
