@@ -15,6 +15,8 @@ class ICHTabBarController: UITabBarController {
 
         // Do any additional setup after loading the view.
         self.initRootVC()
+        
+        self.tabBar.isTranslucent = false
     }
     
     func initRootVC() {
@@ -40,7 +42,7 @@ class ICHTabBarController: UITabBarController {
              kSelImgKey : "addressbook_tabSel"],
             
             [kClassKey : "ichat.ICHProfileViewController",
-             kTitleKey  : "我的",
+             kTitleKey  : "我",
              kImgKey    : "mine_tabUnsel",
              kSelImgKey : "mine_tabSel"] ];
         

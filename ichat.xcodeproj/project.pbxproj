@@ -25,6 +25,8 @@
 		19B93E5521A3072A00668458 /* ICHNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B93E4621A3072A00668458 /* ICHNavigationController.swift */; };
 		19B93E5621A3072A00668458 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B93E4721A3072A00668458 /* ViewController.swift */; };
 		19B93E5721A3072A00668458 /* ICHTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B93E4821A3072A00668458 /* ICHTabBarController.swift */; };
+		19B93E5A21A4511E00668458 /* ICHFriendsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B93E5821A4511E00668458 /* ICHFriendsTableViewCell.swift */; };
+		19B93E5B21A4511E00668458 /* ICHFriendsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19B93E5921A4511E00668458 /* ICHFriendsTableViewCell.xib */; };
 		E5667EA4ED71297B09DACA80 /* Pods_ichat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4E2FECDA5D121E1CC47A8DA /* Pods_ichat.framework */; };
 /* End PBXBuildFile section */
 
@@ -71,6 +73,8 @@
 		19B93E4621A3072A00668458 /* ICHNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICHNavigationController.swift; sourceTree = "<group>"; };
 		19B93E4721A3072A00668458 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		19B93E4821A3072A00668458 /* ICHTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICHTabBarController.swift; sourceTree = "<group>"; };
+		19B93E5821A4511E00668458 /* ICHFriendsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICHFriendsTableViewCell.swift; sourceTree = "<group>"; };
+		19B93E5921A4511E00668458 /* ICHFriendsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ICHFriendsTableViewCell.xib; sourceTree = "<group>"; };
 		E6831065BEE00EAA33A6AF9B /* Pods-ichat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ichat.release.xcconfig"; path = "Pods/Target Support Files/Pods-ichat/Pods-ichat.release.xcconfig"; sourceTree = "<group>"; };
 		F4E2FECDA5D121E1CC47A8DA /* Pods_ichat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ichat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -293,6 +297,8 @@
 		19B93E4021A3072A00668458 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				19B93E5821A4511E00668458 /* ICHFriendsTableViewCell.swift */,
+				19B93E5921A4511E00668458 /* ICHFriendsTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -471,6 +477,7 @@
 				18119B50219403580073FF5D /* LaunchScreen.storyboard in Resources */,
 				18119B4D219403580073FF5D /* Assets.xcassets in Resources */,
 				19B93E5221A3072A00668458 /* ICHFriendsViewController.xib in Resources */,
+				19B93E5B21A4511E00668458 /* ICHFriendsTableViewCell.xib in Resources */,
 				18119B4B219403550073FF5D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -551,6 +558,7 @@
 				19B93E4E21A3072A00668458 /* ICHMessageViewController.swift in Sources */,
 				19B93E5121A3072A00668458 /* ICHFriendsViewController.swift in Sources */,
 				19B93E5521A3072A00668458 /* ICHNavigationController.swift in Sources */,
+				19B93E5A21A4511E00668458 /* ICHFriendsTableViewCell.swift in Sources */,
 				19B93E5621A3072A00668458 /* ViewController.swift in Sources */,
 				19B93E5321A3072A00668458 /* ICHConst.swift in Sources */,
 				19B93E5721A3072A00668458 /* ICHTabBarController.swift in Sources */,
