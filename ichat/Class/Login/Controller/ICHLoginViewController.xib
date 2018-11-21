@@ -12,11 +12,13 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ICHLoginViewController" customModule="ichat" customModuleProvider="target">
             <connections>
+                <outlet property="passwordTextField" destination="GVr-2o-8z7" id="Sqs-5m-Akq"/>
+                <outlet property="usernameTextField" destination="a3d-dv-kDf" id="QMb-34-vAe"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="ICHTextField" customModule="ichat" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
@@ -29,7 +31,7 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bHr-ZI-rGj">
                     <rect key="frame" x="33" y="184" width="309" height="88"/>
                     <subviews>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder=" 请输入账号" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="a3d-dv-kDf">
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder=" 请输入账号" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="a3d-dv-kDf" customClass="ICHTextField" customModule="ichat" customModuleProvider="target">
                             <rect key="frame" x="0.0" y="0.0" width="309" height="44"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="44" id="yn3-eP-omL"/>
@@ -45,7 +47,7 @@
                                 <constraint firstAttribute="height" constant="1" id="Zu5-cT-laH"/>
                             </constraints>
                         </view>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder=" 请输入密码" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="GVr-2o-8z7">
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder=" 请输入密码" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="GVr-2o-8z7" customClass="ICHTextField" customModule="ichat" customModuleProvider="target">
                             <rect key="frame" x="0.0" y="44" width="309" height="44"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="44" id="Y5T-gL-H0R"/>
@@ -69,14 +71,31 @@
                         <constraint firstAttribute="bottom" secondItem="GVr-2o-8z7" secondAttribute="bottom" id="y0o-l6-fHj"/>
                     </constraints>
                 </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4cV-I5-71Q">
+                    <rect key="frame" x="33" y="301" width="309" height="45"/>
+                    <color key="backgroundColor" red="0.086274509803921567" green="0.63529411764705879" blue="0.85882352941176465" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="Tgt-wr-nQj"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="登录">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="loginEvent:" destination="-1" eventType="touchUpInside" id="ITy-lw-hoU"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="4cV-I5-71Q" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="33" id="48e-Dv-Pym"/>
                 <constraint firstItem="eox-yO-7SU" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="J1X-tD-PL1"/>
                 <constraint firstItem="bHr-ZI-rGj" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="33" id="W4x-dg-omB"/>
                 <constraint firstItem="eox-yO-7SU" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="52" id="Wg0-wI-rXG"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bHr-ZI-rGj" secondAttribute="trailing" constant="33" id="dAc-CI-DOO"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="4cV-I5-71Q" secondAttribute="trailing" constant="33" id="e4l-Rb-kJZ"/>
                 <constraint firstItem="bHr-ZI-rGj" firstAttribute="top" secondItem="eox-yO-7SU" secondAttribute="bottom" constant="61" id="oxB-g2-8xp"/>
+                <constraint firstItem="4cV-I5-71Q" firstAttribute="top" secondItem="bHr-ZI-rGj" secondAttribute="bottom" constant="29" id="w2n-zm-wRb"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="138.40000000000001" y="149.77511244377811"/>

@@ -29,6 +29,9 @@
 		19B93E5B21A4511E00668458 /* ICHFriendsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19B93E5921A4511E00668458 /* ICHFriendsTableViewCell.xib */; };
 		19B93E6221A4567C00668458 /* ICHLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B93E6021A4567C00668458 /* ICHLoginViewController.swift */; };
 		19B93E6321A4567C00668458 /* ICHLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19B93E6121A4567C00668458 /* ICHLoginViewController.xib */; };
+		19B93E6521A5AC9200668458 /* ICHTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B93E6421A5AC9200668458 /* ICHTextField.swift */; };
+		19B93E6821A5AE8F00668458 /* ICHChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B93E6621A5AE8F00668458 /* ICHChatViewController.swift */; };
+		19B93E6921A5AE8F00668458 /* ICHChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19B93E6721A5AE8F00668458 /* ICHChatViewController.xib */; };
 		E5667EA4ED71297B09DACA80 /* Pods_ichat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4E2FECDA5D121E1CC47A8DA /* Pods_ichat.framework */; };
 /* End PBXBuildFile section */
 
@@ -79,6 +82,9 @@
 		19B93E5921A4511E00668458 /* ICHFriendsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ICHFriendsTableViewCell.xib; sourceTree = "<group>"; };
 		19B93E6021A4567C00668458 /* ICHLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICHLoginViewController.swift; sourceTree = "<group>"; };
 		19B93E6121A4567C00668458 /* ICHLoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ICHLoginViewController.xib; sourceTree = "<group>"; };
+		19B93E6421A5AC9200668458 /* ICHTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICHTextField.swift; sourceTree = "<group>"; };
+		19B93E6621A5AE8F00668458 /* ICHChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICHChatViewController.swift; sourceTree = "<group>"; };
+		19B93E6721A5AE8F00668458 /* ICHChatViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ICHChatViewController.xib; sourceTree = "<group>"; };
 		E6831065BEE00EAA33A6AF9B /* Pods-ichat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ichat.release.xcconfig"; path = "Pods/Target Support Files/Pods-ichat/Pods-ichat.release.xcconfig"; sourceTree = "<group>"; };
 		F4E2FECDA5D121E1CC47A8DA /* Pods_ichat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ichat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -222,6 +228,8 @@
 			children = (
 				19B93E3121A3072A00668458 /* ICHMessageViewController.xib */,
 				19B93E3221A3072A00668458 /* ICHMessageViewController.swift */,
+				19B93E6621A5AE8F00668458 /* ICHChatViewController.swift */,
+				19B93E6721A5AE8F00668458 /* ICHChatViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -348,6 +356,7 @@
 		19B93E4A21A3072A00668458 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				19B93E6421A5AC9200668458 /* ICHTextField.swift */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -510,6 +519,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				19B93E4C21A3072A00668458 /* ICHDiscoverViewController.xib in Resources */,
+				19B93E6921A5AE8F00668458 /* ICHChatViewController.xib in Resources */,
 				19B93E5021A3072A00668458 /* ICHProfileViewController.xib in Resources */,
 				19B93E4D21A3072A00668458 /* ICHMessageViewController.xib in Resources */,
 				18119B50219403580073FF5D /* LaunchScreen.storyboard in Resources */,
@@ -597,8 +607,10 @@
 				19B93E4E21A3072A00668458 /* ICHMessageViewController.swift in Sources */,
 				19B93E5121A3072A00668458 /* ICHFriendsViewController.swift in Sources */,
 				19B93E5521A3072A00668458 /* ICHNavigationController.swift in Sources */,
+				19B93E6521A5AC9200668458 /* ICHTextField.swift in Sources */,
 				19B93E5A21A4511E00668458 /* ICHFriendsTableViewCell.swift in Sources */,
 				19B93E5621A3072A00668458 /* ViewController.swift in Sources */,
+				19B93E6821A5AE8F00668458 /* ICHChatViewController.swift in Sources */,
 				19B93E5321A3072A00668458 /* ICHConst.swift in Sources */,
 				19B93E6221A4567C00668458 /* ICHLoginViewController.swift in Sources */,
 				19B93E5721A3072A00668458 /* ICHTabBarController.swift in Sources */,

@@ -1,29 +1,24 @@
 //
-//  ICHLoginViewController.swift
+//  ICHChatViewController.swift
 //  ichat
 //
-//  Created by ZHUYN on 2018/11/20.
+//  Created by ZHUYN on 2018/11/21.
 //  Copyright © 2018年 iChat. All rights reserved.
 //
 
 import UIKit
 
-class ICHLoginViewController: UIViewController {
+class ICHChatViewController: UIViewController {
 
-    @IBOutlet var usernameTextField: ICHTextField!
-    @IBOutlet var passwordTextField: ICHTextField!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-    }
-
-
-    @IBAction func loginEvent(_ sender: UIButton) {
         
+        self.title = "聊天页"
     }
-    
+
+
     /*
     // MARK: - Navigation
 
