@@ -167,6 +167,76 @@
 			path = ichatUITests;
 			sourceTree = "<group>";
 		};
+		18BCCABA21A6977F008D6FBD /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		18BCCABB21A697B2008D6FBD /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		18BCCABC21A697B2008D6FBD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		18BCCABD21A697D5008D6FBD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		18BCCABE21A697D5008D6FBD /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		18BCCABF21A697F1008D6FBD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		18BCCAC021A697F1008D6FBD /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		18BCCAC121A697F9008D6FBD /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		18BCCAC221A697F9008D6FBD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		18BCCAC321A69804008D6FBD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		19B93E2821A3072A00668458 /* Class */ = {
 			isa = PBXGroup;
 			children = (
@@ -184,8 +254,8 @@
 			isa = PBXGroup;
 			children = (
 				19B93E2A21A3072A00668458 /* Controller */,
-				19B93E2D21A3072A00668458 /* Model */,
-				19B93E2E21A3072A00668458 /* View */,
+				18BCCABF21A697F1008D6FBD /* Model */,
+				18BCCAC021A697F1008D6FBD /* View */,
 			);
 			path = Discover;
 			sourceTree = "<group>";
@@ -199,26 +269,12 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		19B93E2D21A3072A00668458 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		19B93E2E21A3072A00668458 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		19B93E2F21A3072A00668458 /* Message */ = {
 			isa = PBXGroup;
 			children = (
 				19B93E3021A3072A00668458 /* Controller */,
-				19B93E3321A3072A00668458 /* Model */,
-				19B93E3421A3072A00668458 /* View */,
+				18BCCABD21A697D5008D6FBD /* Model */,
+				18BCCABE21A697D5008D6FBD /* View */,
 			);
 			path = Message;
 			sourceTree = "<group>";
@@ -234,26 +290,12 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		19B93E3321A3072A00668458 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		19B93E3421A3072A00668458 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		19B93E3521A3072A00668458 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
 				19B93E3621A3072A00668458 /* Controller */,
-				19B93E3921A3072A00668458 /* Model */,
-				19B93E3A21A3072A00668458 /* View */,
+				18BCCAC221A697F9008D6FBD /* Model */,
+				18BCCAC121A697F9008D6FBD /* View */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -267,25 +309,11 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		19B93E3921A3072A00668458 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		19B93E3A21A3072A00668458 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		19B93E3B21A3072A00668458 /* Friends */ = {
 			isa = PBXGroup;
 			children = (
 				19B93E3C21A3072A00668458 /* Controller */,
-				19B93E3F21A3072A00668458 /* Model */,
+				18BCCAC321A69804008D6FBD /* Model */,
 				19B93E4021A3072A00668458 /* View */,
 			);
 			path = Friends;
@@ -300,13 +328,6 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		19B93E3F21A3072A00668458 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		19B93E4021A3072A00668458 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -319,9 +340,9 @@
 		19B93E4121A3072A00668458 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				18BCCABA21A6977F008D6FBD /* Lib */,
 				19B93E4221A3072A00668458 /* Other */,
 				19B93E4521A3072A00668458 /* Controller */,
-				19B93E4921A3072A00668458 /* Lib */,
 				19B93E4A21A3072A00668458 /* Tool */,
 			);
 			path = Main;
@@ -346,13 +367,6 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		19B93E4921A3072A00668458 /* Lib */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Lib;
-			sourceTree = "<group>";
-		};
 		19B93E4A21A3072A00668458 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
@@ -365,8 +379,8 @@
 			isa = PBXGroup;
 			children = (
 				19B93E5D21A4566600668458 /* Controller */,
-				19B93E5E21A4566600668458 /* Model */,
-				19B93E5F21A4566600668458 /* View */,
+				18BCCABC21A697B2008D6FBD /* Model */,
+				18BCCABB21A697B2008D6FBD /* View */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -378,20 +392,6 @@
 				19B93E6121A4567C00668458 /* ICHLoginViewController.xib */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		19B93E5E21A4566600668458 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		19B93E5F21A4566600668458 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		1CA0FF5CD82FD3A5BF02290A /* Pods */ = {
@@ -558,14 +558,26 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ichat/Pods-ichat-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/MQTTClient/MQTTClient.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HandyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MQTTClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
