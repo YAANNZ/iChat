@@ -16,6 +16,7 @@
 		18BCCAE321A7F639008D6FBD /* NSArray+HYBUnicodeReadable.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BCCADD21A7F639008D6FBD /* NSArray+HYBUnicodeReadable.m */; };
 		18BCCAE421A7F639008D6FBD /* NSDictionary+HYBUnicodeReadable.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BCCADE21A7F639008D6FBD /* NSDictionary+HYBUnicodeReadable.m */; };
 		18BCCAE521A7F639008D6FBD /* NSSet+HYBUnicodeReadable.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BCCADF21A7F639008D6FBD /* NSSet+HYBUnicodeReadable.m */; };
+		18BCCAE721A7FC55008D6FBD /* ICHModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BCCAE621A7FC55008D6FBD /* ICHModel.swift */; };
 		19B93E4B21A3072A00668458 /* ICHDiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B93E2B21A3072A00668458 /* ICHDiscoverViewController.swift */; };
 		19B93E4C21A3072A00668458 /* ICHDiscoverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19B93E2C21A3072A00668458 /* ICHDiscoverViewController.xib */; };
 		19B93E4D21A3072A00668458 /* ICHMessageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19B93E3121A3072A00668458 /* ICHMessageViewController.xib */; };
@@ -76,6 +77,7 @@
 		18BCCAE021A7F639008D6FBD /* NSArray+HYBUnicodeReadable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+HYBUnicodeReadable.h"; sourceTree = "<group>"; };
 		18BCCAE121A7F639008D6FBD /* NSDictionary+HYBUnicodeReadable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+HYBUnicodeReadable.h"; sourceTree = "<group>"; };
 		18BCCAE221A7F639008D6FBD /* NSSet+HYBUnicodeReadable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSSet+HYBUnicodeReadable.h"; sourceTree = "<group>"; };
+		18BCCAE621A7FC55008D6FBD /* ICHModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICHModel.swift; sourceTree = "<group>"; };
 		19B93E2B21A3072A00668458 /* ICHDiscoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICHDiscoverViewController.swift; sourceTree = "<group>"; };
 		19B93E2C21A3072A00668458 /* ICHDiscoverViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ICHDiscoverViewController.xib; sourceTree = "<group>"; };
 		19B93E3121A3072A00668458 /* ICHMessageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ICHMessageViewController.xib; sourceTree = "<group>"; };
@@ -379,6 +381,7 @@
 				19B93E4321A3072A00668458 /* ICHConst.swift */,
 				19B93E4421A3072A00668458 /* AppDelegate.swift */,
 				18BCCADA21A7E903008D6FBD /* JSJAPI.swift */,
+				18BCCAE621A7FC55008D6FBD /* ICHModel.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -645,6 +648,7 @@
 				19B93E4E21A3072A00668458 /* ICHMessageViewController.swift in Sources */,
 				19B93E5121A3072A00668458 /* ICHFriendsViewController.swift in Sources */,
 				19B93E5521A3072A00668458 /* ICHNavigationController.swift in Sources */,
+				18BCCAE721A7FC55008D6FBD /* ICHModel.swift in Sources */,
 				19B93E6521A5AC9200668458 /* ICHTextField.swift in Sources */,
 				19B93E5A21A4511E00668458 /* ICHFriendsTableViewCell.swift in Sources */,
 				18BCCAE421A7F639008D6FBD /* NSDictionary+HYBUnicodeReadable.m in Sources */,
