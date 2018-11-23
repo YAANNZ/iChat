@@ -12,6 +12,7 @@
 		18119B50219403580073FF5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18119B4E219403580073FF5D /* LaunchScreen.storyboard */; };
 		18119B5B219403580073FF5D /* ichatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18119B5A219403580073FF5D /* ichatTests.swift */; };
 		18119B66219403580073FF5D /* ichatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18119B65219403580073FF5D /* ichatUITests.swift */; };
+		18BCCADB21A7E903008D6FBD /* JSJAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BCCADA21A7E903008D6FBD /* JSJAPI.swift */; };
 		19B93E4B21A3072A00668458 /* ICHDiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B93E2B21A3072A00668458 /* ICHDiscoverViewController.swift */; };
 		19B93E4C21A3072A00668458 /* ICHDiscoverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19B93E2C21A3072A00668458 /* ICHDiscoverViewController.xib */; };
 		19B93E4D21A3072A00668458 /* ICHMessageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19B93E3121A3072A00668458 /* ICHMessageViewController.xib */; };
@@ -65,6 +66,7 @@
 		18119B61219403580073FF5D /* ichatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ichatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18119B65219403580073FF5D /* ichatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ichatUITests.swift; sourceTree = "<group>"; };
 		18119B67219403580073FF5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18BCCADA21A7E903008D6FBD /* JSJAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSJAPI.swift; sourceTree = "<group>"; };
 		19B93E2B21A3072A00668458 /* ICHDiscoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICHDiscoverViewController.swift; sourceTree = "<group>"; };
 		19B93E2C21A3072A00668458 /* ICHDiscoverViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ICHDiscoverViewController.xib; sourceTree = "<group>"; };
 		19B93E3121A3072A00668458 /* ICHMessageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ICHMessageViewController.xib; sourceTree = "<group>"; };
@@ -353,6 +355,7 @@
 			children = (
 				19B93E4321A3072A00668458 /* ICHConst.swift */,
 				19B93E4421A3072A00668458 /* AppDelegate.swift */,
+				18BCCADA21A7E903008D6FBD /* JSJAPI.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -361,8 +364,8 @@
 			isa = PBXGroup;
 			children = (
 				19B93E4621A3072A00668458 /* ICHNavigationController.swift */,
-				19B93E4721A3072A00668458 /* ViewController.swift */,
 				19B93E4821A3072A00668458 /* ICHTabBarController.swift */,
+				19B93E4721A3072A00668458 /* ViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -625,6 +628,7 @@
 				19B93E6821A5AE8F00668458 /* ICHChatViewController.swift in Sources */,
 				19B93E5321A3072A00668458 /* ICHConst.swift in Sources */,
 				19B93E6221A4567C00668458 /* ICHLoginViewController.swift in Sources */,
+				18BCCADB21A7E903008D6FBD /* JSJAPI.swift in Sources */,
 				19B93E5721A3072A00668458 /* ICHTabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
