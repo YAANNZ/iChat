@@ -13,6 +13,9 @@
 		18119B5B219403580073FF5D /* ichatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18119B5A219403580073FF5D /* ichatTests.swift */; };
 		18119B66219403580073FF5D /* ichatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18119B65219403580073FF5D /* ichatUITests.swift */; };
 		18BCCADB21A7E903008D6FBD /* JSJAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BCCADA21A7E903008D6FBD /* JSJAPI.swift */; };
+		18BCCAE321A7F639008D6FBD /* NSArray+HYBUnicodeReadable.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BCCADD21A7F639008D6FBD /* NSArray+HYBUnicodeReadable.m */; };
+		18BCCAE421A7F639008D6FBD /* NSDictionary+HYBUnicodeReadable.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BCCADE21A7F639008D6FBD /* NSDictionary+HYBUnicodeReadable.m */; };
+		18BCCAE521A7F639008D6FBD /* NSSet+HYBUnicodeReadable.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BCCADF21A7F639008D6FBD /* NSSet+HYBUnicodeReadable.m */; };
 		19B93E4B21A3072A00668458 /* ICHDiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B93E2B21A3072A00668458 /* ICHDiscoverViewController.swift */; };
 		19B93E4C21A3072A00668458 /* ICHDiscoverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19B93E2C21A3072A00668458 /* ICHDiscoverViewController.xib */; };
 		19B93E4D21A3072A00668458 /* ICHMessageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19B93E3121A3072A00668458 /* ICHMessageViewController.xib */; };
@@ -67,6 +70,12 @@
 		18119B65219403580073FF5D /* ichatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ichatUITests.swift; sourceTree = "<group>"; };
 		18119B67219403580073FF5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18BCCADA21A7E903008D6FBD /* JSJAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSJAPI.swift; sourceTree = "<group>"; };
+		18BCCADD21A7F639008D6FBD /* NSArray+HYBUnicodeReadable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+HYBUnicodeReadable.m"; sourceTree = "<group>"; };
+		18BCCADE21A7F639008D6FBD /* NSDictionary+HYBUnicodeReadable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+HYBUnicodeReadable.m"; sourceTree = "<group>"; };
+		18BCCADF21A7F639008D6FBD /* NSSet+HYBUnicodeReadable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSSet+HYBUnicodeReadable.m"; sourceTree = "<group>"; };
+		18BCCAE021A7F639008D6FBD /* NSArray+HYBUnicodeReadable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+HYBUnicodeReadable.h"; sourceTree = "<group>"; };
+		18BCCAE121A7F639008D6FBD /* NSDictionary+HYBUnicodeReadable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+HYBUnicodeReadable.h"; sourceTree = "<group>"; };
+		18BCCAE221A7F639008D6FBD /* NSSet+HYBUnicodeReadable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSSet+HYBUnicodeReadable.h"; sourceTree = "<group>"; };
 		19B93E2B21A3072A00668458 /* ICHDiscoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICHDiscoverViewController.swift; sourceTree = "<group>"; };
 		19B93E2C21A3072A00668458 /* ICHDiscoverViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ICHDiscoverViewController.xib; sourceTree = "<group>"; };
 		19B93E3121A3072A00668458 /* ICHMessageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ICHMessageViewController.xib; sourceTree = "<group>"; };
@@ -172,6 +181,7 @@
 		18BCCABA21A6977F008D6FBD /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				18BCCADC21A7F639008D6FBD /* HYBUnicodeReadable */,
 			);
 			path = Lib;
 			sourceTree = "<group>";
@@ -237,6 +247,19 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		18BCCADC21A7F639008D6FBD /* HYBUnicodeReadable */ = {
+			isa = PBXGroup;
+			children = (
+				18BCCADD21A7F639008D6FBD /* NSArray+HYBUnicodeReadable.m */,
+				18BCCADE21A7F639008D6FBD /* NSDictionary+HYBUnicodeReadable.m */,
+				18BCCADF21A7F639008D6FBD /* NSSet+HYBUnicodeReadable.m */,
+				18BCCAE021A7F639008D6FBD /* NSArray+HYBUnicodeReadable.h */,
+				18BCCAE121A7F639008D6FBD /* NSDictionary+HYBUnicodeReadable.h */,
+				18BCCAE221A7F639008D6FBD /* NSSet+HYBUnicodeReadable.h */,
+			);
+			path = HYBUnicodeReadable;
 			sourceTree = "<group>";
 		};
 		19B93E2821A3072A00668458 /* Class */ = {
@@ -624,11 +647,14 @@
 				19B93E5521A3072A00668458 /* ICHNavigationController.swift in Sources */,
 				19B93E6521A5AC9200668458 /* ICHTextField.swift in Sources */,
 				19B93E5A21A4511E00668458 /* ICHFriendsTableViewCell.swift in Sources */,
+				18BCCAE421A7F639008D6FBD /* NSDictionary+HYBUnicodeReadable.m in Sources */,
 				19B93E5621A3072A00668458 /* ViewController.swift in Sources */,
 				19B93E6821A5AE8F00668458 /* ICHChatViewController.swift in Sources */,
 				19B93E5321A3072A00668458 /* ICHConst.swift in Sources */,
+				18BCCAE521A7F639008D6FBD /* NSSet+HYBUnicodeReadable.m in Sources */,
 				19B93E6221A4567C00668458 /* ICHLoginViewController.swift in Sources */,
 				18BCCADB21A7E903008D6FBD /* JSJAPI.swift in Sources */,
+				18BCCAE321A7F639008D6FBD /* NSArray+HYBUnicodeReadable.m in Sources */,
 				19B93E5721A3072A00668458 /* ICHTabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

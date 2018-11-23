@@ -9,6 +9,8 @@
 import Foundation
 import UIKit
 
+let TokenString = "TokenString"
+
 // 扩展部分
 extension UIColor {
     // 16进制 转 RGBA
@@ -30,5 +32,11 @@ extension UIColor {
     // RGB
     class func rgbColor(r :CGFloat, g :CGFloat, b :CGFloat) ->UIColor{
         return UIColor.init(red: r/255.0, green: g/255.0, blue: b/255.0, alpha: 1.0)
+    }
+}
+
+extension CALayer {
+    func borderColorWithUIColor(color: UIColor) {
+        self.borderColor = color.cgColor
     }
 }

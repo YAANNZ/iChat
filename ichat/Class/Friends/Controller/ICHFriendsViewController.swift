@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SVProgressHUD
 
 class ICHFriendsViewController: UIViewController {
 
@@ -24,6 +25,27 @@ class ICHFriendsViewController: UIViewController {
         
         let cellNib = UINib.init(nibName: "ICHFriendsTableViewCell", bundle: nil)
         self.tableView.register(cellNib, forCellReuseIdentifier: ICHFriendsTableViewCellIdentity)
+        
+        OOMLoadingProvider.request(OOMApi.getFriendsList()) { result in
+            if case let .success(response) = result {
+                
+                // 解析数据
+                let responseDict: NSDictionary = try! response.mapJSON() as! NSDictionary
+                print(responseDict)
+                
+                if (responseDict.object(forKey: "flag") as! NSNumber).stringValue == "0" {
+                  
+                    
+                } else {
+                    SVProgressHUD.setMinimumDismissTimeInterval(2)
+                    SVProgressHUD.showError(withStatus: responseDict.object(forKey: "msg") as? String)
+                }
+                
+            } else {
+                SVProgressHUD.setMinimumDismissTimeInterval(2)
+                SVProgressHUD.showError(withStatus: "网络异常")
+            }
+        }
     }
 
 }

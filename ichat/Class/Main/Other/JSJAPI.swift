@@ -58,47 +58,35 @@ let OOMLoadingProvider = MoyaProvider<OOMApi>(requestClosure: timeoutClosure, pl
 
 // 请求分类
 public enum OOMApi {
-    case isPastDue(user: String) // 验证 cookie 是否过期
-    case getAmounts(user: String) // 集团端首页图表展示
-    case getQtNum // 集团全部机组启停数
-    case getQuotaList(user: String, orgId: String) // 电厂机组负荷率
-    case getJzqt(pagenum: String, pagesize: String, orgid: String, g_id: String, type: String, qt_desc: String, starttime: String, endtime: String, name: String) // 获取机组启停数据
-    case getAllOrg // 获得所有有效电厂
+    case doLogin(username: String, password: String) // 登录
+    case getUserDetail() // 用户信息
+    case getFriendsList() // 获取好友列表
 }
 
 // 请求配置
 extension OOMApi: TargetType {
     // 服务器地址
     public var baseURL: URL {
-        return URL(string: "http://123.56.98.99:2080/zpm-admin/api")! // 测试
+        return URL(string: "http://123.56.98.99:2080/zpm-admin")! // 测试
     }
     
     // 各个请求的具体路径
     public var path: String {
         switch self {
-        case .isPastDue:
-            return "/login/isPastDue"
+        case .doLogin:
+            return "/api/login/dologin"
             
-        case .getAmounts:
-            return "/syzb/getAmounts"
+        case .getUserDetail:
+            return "/app/detail"
             
-        case .getQtNum:
-            return "/syzb/getQtNum"
-            
-        case .getQuotaList:
-            return "/syzb/getQuotaList"
-            
-        case .getJzqt:
-            return "/jzqt/getJzqt"
-            
-        case .getAllOrg:
-            return "/jzqt/getAllOrg"
+        case .getFriendsList:
+            return "/api/friends/list"
         }
     }
     
     // 请求类型
     public var method: Moya.Method {
-        return .post
+        return .get
     }
     
     // 请求任务事件（这里附带上参数）
@@ -106,33 +94,15 @@ extension OOMApi: TargetType {
         var params: [String: Any] = [:]
         
         switch self {
-        case .isPastDue(let user):
-            params["user"] = user
+        case .doLogin(let username, let password):
+            params["loginName"] = username
+            params["password"] = password
+            break
+        case .getUserDetail: break
+
             
-        case .getAmounts(let user):
-            params["user"] = user
-            
-        case .getQtNum:
-            params["user"] = "zhourui"
-            
-        case .getQuotaList(let user, let orgId):
-            params["user"] = user
-            params["orgId"] = orgId
-            
-        case .getJzqt(let pagenum, let pagesize, let orgid, let g_id, let type, let qt_desc, let starttime, let endtime, let name):
-            params["user"] = "zhourui"
-            params["pagenum"] = pagenum
-            params["pagesize"] = pagesize
-            params["orgId"] = orgid
-            params["g_id"] = g_id
-            params["type"] = type
-            params["qt_desc"] = qt_desc
-            params["starttime"] = starttime
-            params["endtime"] = endtime
-            params["name"] = name
-            
-        case .getAllOrg:
-            params["user"] = "zhourui"
+        case .getFriendsList: break
+
             
         default:
             break
@@ -153,6 +123,11 @@ extension OOMApi: TargetType {
     
     //请求头
     public var headers: [String: String]? {
-        return ["Cookie": "zhourui=%7B%22time%22%3A%221542010959259%22%2C%22age%22%3A%22123%22%2C%22name%22%3A%22zhourui%22%2C%22type%22%3A%22type%22%7D;Max-Age=2592000"]
+        let tokenStr = UserDefaults.standard.string(forKey: TokenString)
+        if (tokenStr != nil) {
+            return ["sid": tokenStr!]
+        }
+        
+        return nil
     }
 }
