@@ -12,6 +12,7 @@ import HandyJSON
 // 启停机组模型
 struct ContactModel: HandyJSON {
     var userName: String?
+    var profilePhoto: String?
     var friendId: String?
     var userId: String?
     var createDate: String?

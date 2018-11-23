@@ -34,8 +34,9 @@ class ICHFriendsViewController: UIViewController {
                 print(responseDict)
                 
                 if (responseDict.object(forKey: "flag") as! NSNumber).stringValue == "0" {
-                  
-                    
+                    let dataAry: NSArray = responseDict.object(forKey: "result") as! NSArray
+                    self.friendsArray = [ContactModel].deserialize(from: dataAry)! as NSArray
+                    //profilePhoto
                 } else {
                     SVProgressHUD.setMinimumDismissTimeInterval(2)
                     SVProgressHUD.showError(withStatus: responseDict.object(forKey: "msg") as? String)
