@@ -13,7 +13,7 @@ class ICHFriendsViewController: UIViewController {
 
     private let ICHFriendsTableViewCellIdentity = "ICHFriendsTableViewCellIdentity"
     
-    var friendsArray: NSArray! = [["img": "img1", "name": "Anna"], ["img": "img2", "name": "Brant"]]
+    var friendsArray: NSArray! = []
     var sectionTitleAry: NSArray! = ["A", "B"]
     
     @IBOutlet var tableView: UITableView!
@@ -37,6 +37,7 @@ class ICHFriendsViewController: UIViewController {
                     let dataAry: NSArray = responseDict.object(forKey: "result") as! NSArray
                     self.friendsArray = [ContactModel].deserialize(from: dataAry)! as NSArray
                     //profilePhoto
+                    self.tableView.reloadData()
                 } else {
                     SVProgressHUD.setMinimumDismissTimeInterval(2)
                     SVProgressHUD.showError(withStatus: responseDict.object(forKey: "msg") as? String)
@@ -53,11 +54,11 @@ class ICHFriendsViewController: UIViewController {
 
 extension ICHFriendsViewController: UITableViewDelegate, UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 2
+        return 1
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return self.friendsArray.count
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
@@ -76,9 +77,8 @@ extension ICHFriendsViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell:ICHFriendsTableViewCell  = tableView.dequeueReusableCell(withIdentifier: ICHFriendsTableViewCellIdentity, for: indexPath) as! ICHFriendsTableViewCell
-        let cellDict: NSDictionary = self.friendsArray[indexPath.section] as! NSDictionary
-        cell.imgView?.image = UIImage.init(named: cellDict["img"] as! String)
-        cell.nameLabel.text = cellDict["name"] as? String
+        let contactModel: ContactModel = self.friendsArray[indexPath.row] as! ContactModel
+        cell.nameLabel.text = contactModel.userName
         return cell
     }
     
@@ -88,7 +88,11 @@ extension ICHFriendsViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        tableView.deselectRow(at: indexPath, animated: true)
         
-        
+        let chatVC = ICHChatViewController()
+        chatVC.contactModel = self.friendsArray[indexPath.row] as? ContactModel
+        chatVC.hidesBottomBarWhenPushed = true
+        self.navigationController?.pushViewController(chatVC, animated: true)
     }
 }
