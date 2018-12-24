@@ -17,6 +17,10 @@ class ICHProfileViewController: UIViewController {
     }
 
 
+    @IBAction func logoutEvent(_ sender: Any) {
+        UserDefaults.standard.set(false, forKey: IsAutoLogin)
+        UIApplication.shared.keyWindow?.rootViewController = ICHLoginViewController()
+    }
     /*
     // MARK: - Navigation
 

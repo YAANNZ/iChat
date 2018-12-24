@@ -309,8 +309,8 @@
 		19B93E3021A3072A00668458 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				19B93E3121A3072A00668458 /* ICHMessageViewController.xib */,
 				19B93E3221A3072A00668458 /* ICHMessageViewController.swift */,
+				19B93E3121A3072A00668458 /* ICHMessageViewController.xib */,
 				19B93E6621A5AE8F00668458 /* ICHChatViewController.swift */,
 				19B93E6721A5AE8F00668458 /* ICHChatViewController.xib */,
 			);

@@ -40,6 +40,7 @@ class ICHLoginViewController: UIViewController {
                 
                 if (responseDict.object(forKey: "flag") as! NSNumber).stringValue == "0" {
                     UserDefaults.standard.set(responseDict.object(forKey: "result"), forKey: TokenString)
+                    UserDefaults.standard.set(true, forKey: IsAutoLogin)
                     UIApplication.shared.keyWindow?.rootViewController = ICHTabBarController()
                     
                 } else {

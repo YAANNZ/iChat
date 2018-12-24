@@ -9,7 +9,11 @@
 import Foundation
 import UIKit
 
+/*
+ common
+ */
 let TokenString = "TokenString"
+let IsAutoLogin = "IsAutoLogin"
 
 // 扩展部分
 extension UIColor {
